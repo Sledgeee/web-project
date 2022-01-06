@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://olegvoloshyn.pp.ua/ [L,R=301,NE]
+[Resource Limits]
+max_execution_time = 60
+memory_limit = 50M
+[Data Handling]
+post_max_size = 30M
+[File Uploads]
+file_uploads = On
+upload_tmp_dir = /home/a0546147/domains/olegvoloshyn.pp.ua/public_html/assets/images
+upload_max_filesize = 25M
+max_file_uploads = 10

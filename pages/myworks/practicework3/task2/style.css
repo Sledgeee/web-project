@@ -1,0 +1,72 @@
+.container {
+    margin: 30px auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: black;
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    text-align: center;
+}
+
+ul {
+    margin-top: 0px;
+    margin-left: 68px;
+    padding-right: 15px;
+}
+
+h2 {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+}
+ 
+li {
+    font-size: 20px;
+    list-style-type: none;
+}
+ 
+li::marker {
+    content: "- ";
+}
+
+li:nth-child(even) {
+    color: red;
+}
+ 
+.modify-Num-To-NumIntoCircle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    background: white;
+    border: 3px solid red;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+ 
+.col {
+    float: left;
+    width: 50%;
+    height: 800px
+}
+
+.row {
+    height: 50%;
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+    box-sizing: border-box;
+    background:white;
+}
