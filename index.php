@@ -1,9 +1,4 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['user'])) {
-        header("Location: pages/profile/signin.php");
-    }
-?>
+
 
 <!DOCTYPE html>
 <html lang="uk">
